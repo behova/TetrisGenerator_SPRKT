@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		885041C02092B93300F06225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041BF2092B93300F06225 /* AppDelegate.swift */; };
-		885041C22092B93300F06225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041C12092B93300F06225 /* ViewController.swift */; };
-		885041C52092B93300F06225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885041C32092B93300F06225 /* Main.storyboard */; };
 		885041C72092B93400F06225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885041C62092B93400F06225 /* Assets.xcassets */; };
-		885041CA2092B93400F06225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885041C82092B93400F06225 /* LaunchScreen.storyboard */; };
+		885041D22092BA4D00F06225 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D12092BA4D00F06225 /* GameViewController.swift */; };
+		885041D42092C21F00F06225 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D32092C21F00F06225 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		885041BC2092B93300F06225 /* TetrisGenerator_SPRKT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetrisGenerator_SPRKT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885041BF2092B93300F06225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		885041C12092B93300F06225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		885041C42092B93300F06225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		885041C62092B93400F06225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		885041C92092B93400F06225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885041CB2092B93400F06225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885041D12092BA4D00F06225 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		885041D32092C21F00F06225 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				885041BF2092B93300F06225 /* AppDelegate.swift */,
-				885041C12092B93300F06225 /* ViewController.swift */,
-				885041C32092B93300F06225 /* Main.storyboard */,
+				885041D12092BA4D00F06225 /* GameViewController.swift */,
+				885041D32092C21F00F06225 /* Extensions.swift */,
 				885041C62092B93400F06225 /* Assets.xcassets */,
-				885041C82092B93400F06225 /* LaunchScreen.storyboard */,
 				885041CB2092B93400F06225 /* Info.plist */,
 			);
 			path = TetrisGenerator_SPRKT;
@@ -122,9 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885041CA2092B93400F06225 /* LaunchScreen.storyboard in Resources */,
 				885041C72092B93400F06225 /* Assets.xcassets in Resources */,
-				885041C52092B93300F06225 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +130,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885041C22092B93300F06225 /* ViewController.swift in Sources */,
+				885041D22092BA4D00F06225 /* GameViewController.swift in Sources */,
+				885041D42092C21F00F06225 /* Extensions.swift in Sources */,
 				885041C02092B93300F06225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		885041C32092B93300F06225 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				885041C42092B93300F06225 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		885041C82092B93400F06225 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				885041C92092B93400F06225 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		885041CC2092B93400F06225 /* Debug */ = {

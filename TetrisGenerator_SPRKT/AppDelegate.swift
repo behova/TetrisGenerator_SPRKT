@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Add New root View
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        // Adds Game - viewcontroller to above root(key) window
+        let gameViewController = GameViewController()
+        window?.rootViewController = gameViewController
+        
+        
         return true
     }
 
