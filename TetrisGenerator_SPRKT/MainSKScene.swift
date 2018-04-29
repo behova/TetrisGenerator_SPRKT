@@ -35,8 +35,24 @@ class MainSKScene: SKScene {
         }
     }
     
-    let moveNodeUp = SKAction.moveBy(x: 0.0, y: 100.0, duration: 1.0)
-                                     
+    func currentBlocks() ->[SKSpriteNode] {
+        let currentIndex = generator.currentBlockSet
+        var blockArray = [SKSpriteNode]()
+
+        blockArray.append(generator.blockNames[currentIndex - 1])
+        blockArray.append(generator.blockNames[currentIndex - 2])
+        blockArray.append(generator.blockNames[currentIndex - 3])
+        blockArray.append(generator.blockNames[currentIndex - 4])
+        
+        return blockArray
+    }
+    
+    func descend() {
+        let names = currentBlocks()
+        for name in names {
+            name.run(SKAction.moveBy(x: 0.0, y: -1.0, duration: 1.0))
+        }
+    }
     
     override func didMove(to view: SKView) {
         anchorPoint = CGPoint(x: 0.0, y: 0.88)
@@ -45,12 +61,11 @@ class MainSKScene: SKScene {
         addShape()
         addShape()
         addShape()
-        addShape()
-        addShape()
-        addShape()
-        addShape()
-        addShape()
-        print(generator.blockNames)
         
+        //print(generator.blockNames)
+        
+    }
+    override func update(_ currentTime: TimeInterval) {
+        descend()
     }
 }

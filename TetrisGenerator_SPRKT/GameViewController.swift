@@ -12,6 +12,7 @@ class GameViewController: UIViewController {
     
     let skview: SKView = {
         let view = SKView()
+        view.preferredFramesPerSecond = 10
         return view
     }()
 

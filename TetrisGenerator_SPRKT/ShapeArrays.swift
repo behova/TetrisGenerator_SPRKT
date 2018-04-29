@@ -56,7 +56,7 @@ class ShapeArrays {
     var lVersion = 0
     
     let iBlock = [
-        [0, 1, 0],
+        [1, 1, 0],
         [0, 1, 0],
         [0, 1, 0],
         ]

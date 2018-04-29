@@ -11,7 +11,8 @@ import SpriteKit
 class Generate: SKNode {
     
     let width = ScreenSize.width / 20
-    var blockNames = [String]()
+    var blockNames = [SKSpriteNode]()
+    var currentBlockSet = 0
     
     func generateFromArray(shapeArrayInt: [[Int]], shapeSprite: SKNode, named: String) -> [SKSpriteNode] {
         var blockNum = 1
@@ -30,9 +31,10 @@ class Generate: SKNode {
                     block.size = CGSize(width: width, height: width)
                     
                     blockNum += 1
+                    currentBlockSet += 1
                     
                     blockArray.append(block)
-                    blockNames.append(block.name!)
+                    blockNames.append(block)
                 }
             }
         }
