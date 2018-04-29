@@ -12,26 +12,15 @@ class Generate: SKNode {
     
     let width = ScreenSize.width / 20
     
-    let matrix = [
-        [0, 1, 0 ],
-        [0, 1, 0 ],
-        [1, 1, 0 ]
-    ]
-    
-    var matrixSprite: SKNode = {
-        var sprite = SKSpriteNode(imageNamed: "crate_43")
-        
-        return sprite
-    }()
-    
-    func generateFromArray() -> [SKSpriteNode] {
+    func generateFromArray(shapeArrayInt: [[Int]], shapeSprite: SKNode) -> [SKSpriteNode] {
         var blockArray = [SKSpriteNode]()
-        for x in 0 ..< matrix.count {
-            for y in 0 ..< matrix[x].count {
-                if matrix[x][y] > 0 {
+        for x in 0 ..< shapeArrayInt.count {
+            for y in 0 ..< shapeArrayInt[x].count {
+                if shapeArrayInt[x][y] > 0 {
                     
-                    let block = matrixSprite.copy() as! SKSpriteNode
-                    block.name = "matrixSprite\(y)"
+                    let block = shapeSprite.copy() as! SKSpriteNode
+                    // TODO: Revisit naming individual sprites
+                    //block.name = "\(shapeSprite.name)\(y)"
                     // try to make position integers?
                     block.position = CGPoint(x: CGFloat(x + 1) * width, y: CGFloat(y + 1) * width)
                     block.size = CGSize(width: width, height: width)

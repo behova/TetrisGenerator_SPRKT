@@ -11,10 +11,21 @@ import SpriteKit
 class MainSKScene: SKScene {
     
     let generator = Generate()
+    let arrayGen = ShapeArrays()
+    let shapeSprite = ShapeTextures()
     
     func addShape() {
+        // retrieves random array for generator
+        let shapeArray = arrayGen.retrieveRandomShapeArray()
         
-        let shape = generator.generateFromArray()
+        // sets global index so texture matches block shape
+        let chosenIndex = arrayGen.chosenIndex
+        
+        //retrieves spritenodes with textures that match shape type
+        let texture = shapeSprite.retrieveTexture(chosenIndex: chosenIndex)
+        
+        //generates spritenodes with proper locations
+        let shape = generator.generateFromArray(shapeArrayInt: shapeArray, shapeSprite: texture)
         
         for x in shape {
             addChild(x)
