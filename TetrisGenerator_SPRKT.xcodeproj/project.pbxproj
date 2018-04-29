@@ -12,7 +12,6 @@
 		885041D22092BA4D00F06225 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D12092BA4D00F06225 /* GameViewController.swift */; };
 		885041D42092C21F00F06225 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D32092C21F00F06225 /* Extensions.swift */; };
 		885041D62092C48100F06225 /* MainSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D52092C48100F06225 /* MainSKScene.swift */; };
-		88E91CCA2095473B00B48F37 /* BlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91CC92095473B00B48F37 /* BlockNode.swift */; };
 		88F19DEC20963652000C6DBB /* ShapeArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F19DEB20963652000C6DBB /* ShapeArrays.swift */; };
 		88F19DEE20964AE6000C6DBB /* ShapeTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F19DED20964AE6000C6DBB /* ShapeTextures.swift */; };
 		88F58E6A2093ED44009B449C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F58E692093ED44009B449C /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 		885041D12092BA4D00F06225 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		885041D32092C21F00F06225 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		885041D52092C48100F06225 /* MainSKScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSKScene.swift; sourceTree = "<group>"; };
-		88E91CC92095473B00B48F37 /* BlockNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNode.swift; sourceTree = "<group>"; };
 		88F19DEB20963652000C6DBB /* ShapeArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeArrays.swift; sourceTree = "<group>"; };
 		88F19DED20964AE6000C6DBB /* ShapeTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTextures.swift; sourceTree = "<group>"; };
 		88F58E692093ED44009B449C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,10 +68,9 @@
 				885041D12092BA4D00F06225 /* GameViewController.swift */,
 				885041D52092C48100F06225 /* MainSKScene.swift */,
 				88F58E6E2093EFAC009B449C /* Generate.swift */,
-				885041D32092C21F00F06225 /* Extensions.swift */,
-				88E91CC92095473B00B48F37 /* BlockNode.swift */,
 				88F19DEB20963652000C6DBB /* ShapeArrays.swift */,
 				88F19DED20964AE6000C6DBB /* ShapeTextures.swift */,
+				885041D32092C21F00F06225 /* Extensions.swift */,
 				885041C62092B93400F06225 /* Assets.xcassets */,
 				885041CB2092B93400F06225 /* Info.plist */,
 				88F58E6D2093EEAD009B449C /* StoryBoards */,
@@ -165,7 +162,6 @@
 				885041D62092C48100F06225 /* MainSKScene.swift in Sources */,
 				88F58E6F2093EFAC009B449C /* Generate.swift in Sources */,
 				88F19DEE20964AE6000C6DBB /* ShapeTextures.swift in Sources */,
-				88E91CCA2095473B00B48F37 /* BlockNode.swift in Sources */,
 				885041D42092C21F00F06225 /* Extensions.swift in Sources */,
 				885041C02092B93300F06225 /* AppDelegate.swift in Sources */,
 				88F19DEC20963652000C6DBB /* ShapeArrays.swift in Sources */,
