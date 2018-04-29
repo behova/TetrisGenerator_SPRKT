@@ -10,13 +10,19 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     
-    let skview = SKView()
-    
+    let skview: SKView = {
+        let view = SKView()
+        return view
+    }()
+
     override func viewDidLoad() {
         
         view.addSubview(skview)
+        skview.fillSuperView()
         
-        view.fillSuperView()
+        let mainscene = MainSKScene(size: CGSize(width: ScreenSize.width, height: ScreenSize.height))
+        skview.presentScene(mainscene)
+        skview.ignoresSiblingOrder = true
     }
     
 }

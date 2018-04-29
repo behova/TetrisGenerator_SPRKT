@@ -11,6 +11,11 @@
 		885041C72092B93400F06225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885041C62092B93400F06225 /* Assets.xcassets */; };
 		885041D22092BA4D00F06225 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D12092BA4D00F06225 /* GameViewController.swift */; };
 		885041D42092C21F00F06225 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D32092C21F00F06225 /* Extensions.swift */; };
+		885041D62092C48100F06225 /* MainSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885041D52092C48100F06225 /* MainSKScene.swift */; };
+		88E91CCA2095473B00B48F37 /* BlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91CC92095473B00B48F37 /* BlockNode.swift */; };
+		88F58E6A2093ED44009B449C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F58E692093ED44009B449C /* LaunchScreen.storyboard */; };
+		88F58E6C2093ED7B009B449C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F58E6B2093ED7B009B449C /* Main.storyboard */; };
+		88F58E6F2093EFAC009B449C /* Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F58E6E2093EFAC009B449C /* Generate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		885041CB2092B93400F06225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885041D12092BA4D00F06225 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		885041D32092C21F00F06225 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		885041D52092C48100F06225 /* MainSKScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSKScene.swift; sourceTree = "<group>"; };
+		88E91CC92095473B00B48F37 /* BlockNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNode.swift; sourceTree = "<group>"; };
+		88F58E692093ED44009B449C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88F58E6B2093ED7B009B449C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		88F58E6E2093EFAC009B449C /* Generate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +64,24 @@
 			children = (
 				885041BF2092B93300F06225 /* AppDelegate.swift */,
 				885041D12092BA4D00F06225 /* GameViewController.swift */,
+				885041D52092C48100F06225 /* MainSKScene.swift */,
+				88F58E6E2093EFAC009B449C /* Generate.swift */,
 				885041D32092C21F00F06225 /* Extensions.swift */,
+				88E91CC92095473B00B48F37 /* BlockNode.swift */,
 				885041C62092B93400F06225 /* Assets.xcassets */,
 				885041CB2092B93400F06225 /* Info.plist */,
+				88F58E6D2093EEAD009B449C /* StoryBoards */,
 			);
 			path = TetrisGenerator_SPRKT;
+			sourceTree = "<group>";
+		};
+		88F58E6D2093EEAD009B449C /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				88F58E692093ED44009B449C /* LaunchScreen.storyboard */,
+				88F58E6B2093ED7B009B449C /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				885041C72092B93400F06225 /* Assets.xcassets in Resources */,
+				88F58E6A2093ED44009B449C /* LaunchScreen.storyboard in Resources */,
+				88F58E6C2093ED7B009B449C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				885041D22092BA4D00F06225 /* GameViewController.swift in Sources */,
+				885041D62092C48100F06225 /* MainSKScene.swift in Sources */,
+				88F58E6F2093EFAC009B449C /* Generate.swift in Sources */,
+				88E91CCA2095473B00B48F37 /* BlockNode.swift in Sources */,
 				885041D42092C21F00F06225 /* Extensions.swift in Sources */,
 				885041C02092B93300F06225 /* AppDelegate.swift in Sources */,
 			);

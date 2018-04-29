@@ -6,7 +6,30 @@
 //  Copyright © 2018 HipsterTrikster. All rights reserved.
 //
 
-import UIKit
+import SpriteKit
+
+struct ScreenSize {
+    // call width/height to dynamically size an sk scene (cgfloats)
+    static let width = UIScreen.main.bounds.size.width
+    static let height = UIScreen.main.bounds.size.height
+    static let maxHeight = max(ScreenSize.width, ScreenSize.height)
+    static let minHeight = min(ScreenSize.width, ScreenSize.height)
+}
+
+extension SKSpriteNode {
+    
+    func scaleTo(screenWidthPercentage: CGFloat) {
+        let aspectRatio = self.size.height / self.size.width
+        self.size.width = ScreenSize.width * screenWidthPercentage
+        self.size.height = self.size.width * aspectRatio
+    }
+    
+    func scaleTo(screenHeightPercentage: CGFloat) {
+        let aspectRatio = self.size.width / self.size.height
+        self.size.height = ScreenSize.height * screenHeightPercentage
+        self.size.height = self.size.height * aspectRatio
+    }
+}
 
 extension UIView {
     
@@ -14,7 +37,6 @@ extension UIView {
         
         anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor)
     }
-    
     
     func anchorSize(to view:UIView) {
         
