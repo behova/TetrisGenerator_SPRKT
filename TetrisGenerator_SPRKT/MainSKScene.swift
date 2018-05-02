@@ -36,6 +36,7 @@ class MainSKScene: SKScene {
     }
     
     func currentBlocks() ->[SKSpriteNode] {
+        //reads current block index from generator class and appends the last four to an array
         let currentIndex = generator.currentBlockSet
         var blockArray = [SKSpriteNode]()
 
@@ -50,19 +51,16 @@ class MainSKScene: SKScene {
     func descend() {
         let names = currentBlocks()
         for name in names {
-            name.run(SKAction.moveBy(x: 0.0, y: -1.0, duration: 1.0))
+            name.run(SKAction.moveBy(x: 0.0, y: -10.0, duration: 1.0))
+            
         }
     }
     
+    
     override func didMove(to view: SKView) {
-        anchorPoint = CGPoint(x: 0.0, y: 0.88)
+        anchorPoint = CGPoint(x: 0.5, y: 0.5)
         backgroundColor =  .cyan
         addShape()
-        addShape()
-        addShape()
-        addShape()
-        
-        //print(generator.blockNames)
         
     }
     override func update(_ currentTime: TimeInterval) {
